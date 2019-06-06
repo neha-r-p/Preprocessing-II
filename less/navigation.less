@@ -10,6 +10,11 @@ nav{
     width: 800px;
     margin:0 auto;
 
+    @media @mobile {
+        .flexbase(column, space-between, center);
+        width: 100%;
+    }
+
     a {
        text-decoration: none;
        padding:0 20px;

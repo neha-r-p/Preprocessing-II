@@ -180,6 +180,15 @@ section nav {
   width: 800px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  section nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
 section nav a {
   text-decoration: none;
   padding: 0 20px;
@@ -192,6 +201,11 @@ section nav a {
   border-top: 2px dashed silver;
   background: #FFEBCD;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .footer {
+    width: 100%;
+  }
 }
 .footer p {
   text-align: center;
@@ -214,6 +228,11 @@ section nav a {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 75%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -258,9 +277,20 @@ section nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 75%;
+  }
 }
 .content-pick .destination .btn {
   background-color: #17A2B8;
