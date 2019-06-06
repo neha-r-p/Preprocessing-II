@@ -1,13 +1,24 @@
 .home {
+  header{
+    // padding: 0 0 10px 0;
+   
 
+    img {
+      padding: 0 0 23px 0;
+    }
+    p{
+      padding: 0;
+    }
+  }
+ 
+    
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
+
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -22,10 +33,19 @@
       }
     }
   }
+}
+   .go {
+      border-top: @border;
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-top: 20px;
+    }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @border;
+    padding-top: 0;
+    margin-bottom: 5px;
 
     .text-content {
       padding-left: 1%;
@@ -40,7 +60,9 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+    border: 0;
+    padding-top: 0px;
 
     img {
       border-radius: 10px;
@@ -49,13 +71,17 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    border-top: @border;
+    border-bottom: none;
     display: flex;
     justify-content: space-between;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button(@button-bg, @white);
     }
   }
 }// home

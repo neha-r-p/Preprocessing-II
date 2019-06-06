@@ -1,1 +1,20 @@
 // Mixins in here
+
+
+.flexbase(@fd, @jc, @ai) {
+    display: flex;
+    flex-direction: @fd;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.button(@bgc, @btncolor){
+    background-color: @bgc;
+    color: @btncolor;
+    padding: 15px 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 18px;
+    width: 200px;
+
+}
