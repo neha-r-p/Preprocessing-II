@@ -4,6 +4,9 @@ section {
 
     padding: 23px 0;
     border-bottom: @border;
+    @media @mobile {
+        padding:20px 0 10px;
+    }
 
 nav{
     .flexbase(row, space-between, center);
@@ -21,6 +24,10 @@ nav{
        font-size: 1.4rem;
        justify-content: space-evenly;
        color: @shark;
+       @media @mobile {
+           font-size: 1.6rem;
+           margin:0 10px;
+       }
     }
 }
 

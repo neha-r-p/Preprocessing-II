@@ -146,6 +146,12 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -168,9 +174,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 92%;
+  }
+}
 section {
   padding: 23px 0;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  section {
+    padding: 20px 0 10px;
+  }
 }
 section nav {
   display: flex;
@@ -195,6 +211,12 @@ section nav a {
   font-size: 1.4rem;
   justify-content: space-evenly;
   color: #212529;
+}
+@media (max-width: 500px) {
+  section nav a {
+    font-size: 1.6rem;
+    margin: 0 10px;
+  }
 }
 .footer {
   width: 88%;
@@ -231,15 +253,26 @@ section nav a {
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
-    width: 75%;
+    width: 100%;
   }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .go {
   border-top: 2px dashed #C0C0C0;
@@ -252,6 +285,11 @@ section nav a {
   border-bottom: 2px dashed #C0C0C0;
   padding-top: 0;
   margin-bottom: 5px;
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .inverse-content .text-content {
   padding-left: 1%;
@@ -267,6 +305,12 @@ section nav a {
   border: 0;
   padding-top: 0px;
 }
+@media (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
 .content-destination img {
   border-radius: 10px;
 }
@@ -281,6 +325,7 @@ section nav a {
   .content-pick {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0px;
   }
 }
 .content-pick .destination {
@@ -289,7 +334,7 @@ section nav a {
 }
 @media (max-width: 500px) {
   .content-pick .destination {
-    width: 75%;
+    width: 80%;
   }
 }
 .content-pick .destination .btn {
@@ -298,6 +343,11 @@ section nav a {
   padding: 15px 10px;
   font-size: 1.8rem;
   text-align: center;
-  border-radius: 18px;
+  border-radius: 15px;
   width: 200px;
+}
+@media (max-width: 500px) {
+  .content-pick .destination .btn {
+    width: 100%;
+  }
 }
