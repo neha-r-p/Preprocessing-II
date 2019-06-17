@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+section {
+
+    padding: 23px 0;
+    border-bottom: @border;
+    @media @mobile {
+        padding:20px 0 10px;
+    }
+
+nav{
+    .flexbase(row, space-between, center);
+    width: 800px;
+    margin:0 auto;
+
+    @media @mobile {
+        .flexbase(column, space-between, center);
+        width: 100%;
+    }
+
+    a {
+       text-decoration: none;
+       padding:0 20px;
+       font-size: 1.4rem;
+       justify-content: space-evenly;
+       color: @shark;
+       @media @mobile {
+           font-size: 1.6rem;
+           margin:0 10px;
+       }
+    }
+}
+
+}
